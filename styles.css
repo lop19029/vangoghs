@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nixie+One&display=swap');
+/*font-family: 'Libre Baskerville', serif;
+font-family: 'Nixie One', cursive;*/
+
+body{
+    background-image: url("background.jpg");
+    background-color: #cccccc;
+}
+a{text-decoration: none;}
+/*Set fonts*/
+    h1, h2{font-family: 'Nixie One', cursive;}
+#title{font-size: 5em;}
+h2{font-size: 2em;}
+h3, h4{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1em;}
+p{
+  font-family:'Libre Baskerville', serif;
+  font-size: 1em;}
+
+/*Set header*/
+header{
+    margin: 15px;
+    background-color: #2d3047;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #57677e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#title{
+margin-bottom: -10px;
+margin-top: -10px;}
+#subtitle{margin-bottom: 10px;}
+
+/*Set biography*/
+.text{
+    margin: 15px;
+    padding: 10px;
+    background-color:#ffca6d;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ffc55e;
+    color: #cc5500;
+    text-align: center;}
+
+
+/*Set navigation*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li a{
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 8px;
+  background-color: white;
+  color: #cc5500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  display: block;
+  text-align: center;
+}
+li a:hover{
+    background-color:#2d3047;
+    color: white;}
+
+/*Set Master Pieces*/
+#masterIntro{display:block; text-align: center;}
+.master-pieces{
+    color: white;
+    background-color: #cc5500;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.master-pieces img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  margin-top: 5px;
+}
+
+.master-pieces h4{text-align: center;}
+.master-pieces p{text-align: center;}
+.masterp2{background-color: white;
+    color: #cc5500;}
+.masterp4{background-color: white;
+    color: #cc5500;}
+.masterp6{
+    background-color: white;
+    color: #cc5500;
+}
+@media only screen and (min-width: 768px){
+    .topgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    header{
+        align-content: center;
+        grid-column: 1/2;
+    }
+    .navigation{
+        grid-column: 1/2;
+    }
+    .text{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .topgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    header{
+        align-content: center;
+        grid-column: 1/2;
+    }
+    .navigation{
+        grid-column: 1/2;
+    }
+    .text{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+    .master-pieces{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 7% 31% 31% 31%;
+    }
+    #masterIntro{
+        grid-column: 1/3;
+    }
+    .masterp1{
+        grid-column: 1/2;
+    
+    }
+    .masterp2{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: white;
+        color: #cc5500;
+    }
+    .masterp3{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-color: white;
+        color: #cc5500;
+       
+    }
+    .masterp4{
+        grid-column: 2/3;
+        background-color: #cc5500;
+        color: white;
+    }
+    .masterp5{
+        grid-column: 1/2;
+    }
+    .masterp6{
+        grid-column: 2/3;
+    }
+
+    .master-pieces div{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .master-pieces div img{
+        grid-column: 1/2;
+        grid-row: 1/2;;
+        margin-left: 3px;
+    }
+    .master-pieces div h4{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .master-pieces div p{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        align-content: center;
+        align-items: center;   
+        margin-left: 3px;
+    }
+}   
+footer{
+    display: flex;
+    font-family: 'Libre Baskerville', serif;
+    background-color: #2d3047;
+    color: white;
+    align-items: center;
+}
+footer img{
+    margin:5px;
+    margin-bottom: 0px;
+    max-width: 50%;
+}
